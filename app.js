@@ -5,7 +5,7 @@ const app = new express();
 const PORT = process.env.PORT || 3000;
 
 // connect to mongodb
-const MONGODB_URI = "mongodb+srv://bookmarker_app:bookmarker_12345@bookmarker-zythc.mongodb.net/test?retryWrites=true&w=majority";
+const MONGODB_URI = "mongodb+srv://bookmarker_app:<password>@bookmarker-zythc.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true 
