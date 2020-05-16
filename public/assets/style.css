@@ -1,0 +1,133 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    background-color: rgb(36, 37, 37);
+    color: #fff;
+}
+
+.container{
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0.3em;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 0.6em 1.3em;
+    background-color: rgb(7, 68, 138);
+    color: #fff;
+    margin: 1em 0;
+}
+
+.btn:hover{
+    background-color:  rgb(6, 90, 185);
+}
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* bookmark */
+.bookmark{
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(5, 1, 26);
+    color: white;
+    padding: 1.8rem;
+}
+
+label{
+    display: block;
+    font-size: 1.3rem;
+    padding: 0.7em 0;
+}
+
+input[type="text"]{
+    width: 50%;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.3em;
+}
+
+/* links */
+.links{
+    width: 50%;
+    margin: 3rem auto;
+}
+
+.links h3, .links i{
+    font-size: 1.3rem;
+}
+
+.links h3{
+    flex-grow: 1;
+}
+.links i{
+    margin-left: 1em;
+}
+
+.links li{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15);
+    padding: 0.3em 1rem;
+    margin: 1em 0;
+}
+
+.delete {
+    color: tomato;
+}
+
+.link{
+    color: rgb(6, 90, 185);
+}
+
+@media (max-width: 700px){
+    body{
+        font-size: 15px;
+    }
+    .bookmark, .links{
+        width: 80%;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+    .bookmark, .links{
+        width: 90%;
+    }
+}

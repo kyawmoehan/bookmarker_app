@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/notebook.png" type="image/x-icon">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <div class="container header">
+        <img src="/assets/images/notebook.png" alt="">
+        <h1 class="title">Bookmarker</h1>
+    </div>
+    <div class="container bookmark">
+        <div>
+            <h2>Bookmark Your Favorite Sites</h2>
+            <form action="" class="bookmark-form">
+                <label for="name">Website Name</label>
+                <input type="text" name="name" id="name" placeholder="e.g: Google">
+                <label for="url">Website URL</label>
+                <input type="text" name="url" id="url" placeholder="e.g: www.google.com">
+                <input type="submit" class="btn" value="Save Bookmark">
+            </form>
+        </div>
+    </div>
+    <div class="container links">
+        <ul>
+            <% links.forEach(link => { %>
+            <li>
+                <h3><%= link.name %></h3>
+                <a href=<%= "http://"+ link.url %> target="_blank" class="link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="delete"><i class="fas fa-trash"></i></a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+
+    <!-- script -->
+    <script src="https://kit.fontawesome.com/58ec7c6d3d.js" crossorigin="anonymous"></script>
+    <script src="/assets/script.js"></script>
+</body>
+</html>
